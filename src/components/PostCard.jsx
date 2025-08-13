@@ -3,7 +3,7 @@ import appwriteService from "../appwrite/config"
 import {Link} from 'react-router-dom'
 
 function PostCard({$id, title, featuredImage}) {  
-  const imageUrl = featuredImage ? appwriteService.getFilePreview(featuredImage) : 'fallback-image-url';
+  const imageUrl = featuredImage ? appwriteService.getFilepreview(featuredImage) : 'fallback-image-url';
   
   return (
     <Link to={`/post/${$id}`}>
@@ -11,7 +11,6 @@ function PostCard({$id, title, featuredImage}) {
             <div className='w-full justify-center mb-4'>
                 <img src={imageUrl}
                 className='rounded-xl' />
-
             </div>
             <h2
             className='text-xl font-bold'
