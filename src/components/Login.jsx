@@ -9,7 +9,7 @@ import { useForm } from 'react-hook-form';
 function Login() {
     const navigate = useNavigate();
     const dispatch = useDispatch();
-    const { register, handleSubmit } = useForm(); // Here handleSubmit is a key word of ueForm
+    const { register, handleSubmit } = useForm(); // Here handleSubmit is a key word of useForm
     const [error, setError] = useState("");
 
     const login = async (data) => {
